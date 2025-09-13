@@ -1,0 +1,219 @@
+/* ===== RESET GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo a {
+    font-weight: 700;
+    font-size: 28px;
+    color: #000000;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.main-nav a {
+    font-weight: 400;
+    font-size: 22px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #E13B25;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 50px auto;
+    gap: 50px;
+}
+
+.profile-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #D9D9D9; /* comme le cercle Figma */
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-text h1 {
+    font-weight: 700;
+    font-size: 68px; /* Figma */
+    line-height: 82px;
+    color: #000000;
+}
+
+.intro-text h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.intro-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+/* ===== BOUTONS ===== */
+.buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    border: 1px solid #593E03;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-cv {
+    background-color: #EEA302;
+    color: #000000;
+}
+
+.btn-projets {
+    background-color: #E13B25;
+    color: #000000;
+}
+
+.btn-contact {
+    background-color: #80D8DA;
+    color: #000000;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 18px;
+}
+
+footer .contact-info,
+footer .social-links {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #E13B25;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons-container {
+        justify-content: center;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro-text h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .intro-text h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .hero-section {
+        gap: 20px;
+    }
+
+    .buttons-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+}
