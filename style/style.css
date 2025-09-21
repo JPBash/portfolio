@@ -286,3 +286,21 @@ form button:hover {
 .contact-info a {
     color: #E13B25;
 }
+
+/* ===== PAGE CV ===== */
+.cv-page {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+.cv-page h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+}
+.cv-section {
+    margin-bottom: 40px;
+}
