@@ -1,15 +1,138 @@
-<main>
-    <h1>Mes Projets</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Jean-Pierre Bashizi</title>
+  <meta name="description" content="Découvrez les projets web de Jean-Pierre Bashizi : portfolio, application To-Do List et d'autres réalisations en HTML, CSS et JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
 
-    <section>
-        <h2>Portfolio </h2>
-        <p>Création d’un site portfolio en HTML et CSS pour présenter mon parcours, mes compétences et mes projets.</p>
-        <a href="https://github.com/JPBash/portfolio" target="_blank">Voir sur GitHub</a>
-    </section>
+  <header id="mainHeader">
+    <div class="logo">
+      <a href="index.html">Bashizi <span>J-P</span></a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  </header>
 
-    <section>
-        <h2>Projet 2 : Application To-Do List</h2>
-        <p>Application web simple permettant de gérer une liste de tâches. Réalisée avec HTML, CSS et JavaScript.</p>
-        <a href="https://github.com/JPBash/todo-list" target="_blank">Voir sur GitHub</a>
-    </section>
-</main>
+  <div class="page-header">
+    <h1>Mes <span>Projets</span></h1>
+    <p>Une sélection de mes réalisations en développement web</p>
+  </div>
+
+  <main class="page-content">
+    <div class="projects-grid">
+
+      <!-- Projet 1 : Portfolio -->
+      <article class="project-card">
+        <div class="project-thumbnail" style="background: linear-gradient(135deg, #0D1117 0%, #1a2332 100%);">
+          🌐
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+          <h3>Portfolio Personnel</h3>
+          <p>Site portfolio présentant mon parcours professionnel, mes compétences et mes projets. Conçu avec HTML et CSS pur, design entièrement responsive et accessible.</p>
+          <div class="project-links">
+            <a href="https://github.com/JPBash/portfolio" target="_blank" rel="noopener" class="project-link github">⬡ GitHub</a>
+            <a href="#" class="project-link demo">↗ En ligne</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 2 : To-Do List -->
+      <article class="project-card">
+        <div class="project-thumbnail" style="background: linear-gradient(135deg, #DC2626 0%, #F59E0B 100%);">
+          ✅
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3>Application To-Do List</h3>
+          <p>Application web pour gérer une liste de tâches : ajout, suppression et marquage des tâches comme terminées. Interface simple, intuitive et réactive.</p>
+          <div class="project-links">
+            <a href="https://github.com/JPBash/todo-list" target="_blank" rel="noopener" class="project-link github">⬡ GitHub</a>
+            <a href="#" class="project-link demo">↗ En ligne</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 3 : Coming soon -->
+      <article class="project-card" style="opacity: 0.65;">
+        <div class="project-thumbnail" style="background: linear-gradient(135deg, #0891B2 0%, #06B6D4 100%);">
+          🔜
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Bientôt</span>
+          </div>
+          <h3>Prochain Projet</h3>
+          <p>Un nouveau projet est en cours de développement. Restez connecté pour découvrir ma prochaine réalisation !</p>
+          <div class="project-links">
+            <a href="contact.html" class="project-link demo" style="flex: none; padding: 10px 20px;">Me contacter</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">Bashizi <span>J-P</span></a>
+          <p>Développeur Web passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></li>
+            <li><a href="tel:+243828601922">+243 828 601 922</a></li>
+          </ul>
+          <div class="footer-social">
+            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 BASHIZI Mulunge Jean-Pierre — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

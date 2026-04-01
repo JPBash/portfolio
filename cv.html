@@ -1,66 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Jean-Pierre Bashizi</title>
+  <meta name="description" content="Curriculum vitae de Jean-Pierre Bashizi — développeur web. Formations, expériences professionnelles et compétences techniques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="cv-page">
-    <h1>Mon CV</h1>
 
-    <section>
-        <h2>Éducation</h2>
-        <ul>
-            <li>2023 - 2025 : Formation Développeur Web - Kadea Academy</li>
-            <li>2018 - 2022 : Licence en Technique de navigation maritime comme capitaine</li>
-            <li>2022 : Formation en Informatique</li> 
-        </ul>
-    </section>
+  <header id="mainHeader">
+    <div class="logo">
+      <a href="index.html">Bashizi <span>J-P</span></a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  </header>
 
-    <section>
-        <h2>Expériences</h2>
-        <ul>
-            <li>2024 : Assistant a Capricorne SAP RDCongo jusqu'à ce jour</li>
-            <li>2022 : Projet étudiant - Application de gestion de tâches</li>
-            <li>2022 Le Majestic River (Kinshasa) 
-                - Tâches : Officier de quart (7 mois)</li>
-            <li>2019 -2021 : Ets Vanny Bishweka (Goma, Bukavu) 
-                - Tâches : Second capitaine, logistique portuaire (9 mois)</li>
-            <li>2021 : Ets Silimu (Bukavu) 
-                - Tâches : Officier de quart, logistique portuaire (2 mois)</li>      
+  <div class="page-header">
+    <h1>Mon <span>CV</span></h1>
+    <p>Mon parcours, mes compétences et mes expériences professionnelles</p>
+  </div>
 
-        </ul>
-    </section>
+  <main class="page-content">
+    <div class="cv-grid">
 
-    <section>
-        <h2>Compétences</h2>
-        <ul>
-            <li>HTML5 / CSS3</li>
-            <li>Git & GitHub</li>
-            <li>Responsive Design</li>
-            <li>Travail en équipe, autonomie</li>
-            <li>Permis de conduire bateau</li>
-            <li>Permis de conduire automobile</li> 
-            <li>Maitrise de la logistique de marchandises </li>
-            <li>Maîtrise du module de gestion de réseau de radiocommunication (UHF/VHF BAND)</li> 
-            <li>Maîtrise du digital et de l’outil informatique (Package microsoft, toute la suite d’Adobe, Canva, AutoCAD, certifié en Data Analyst : Google Analytics 4 etc.), </li>
-            <li>Expérience dans l'élaboration, la gestion et la mise en oeuvre de projets surtout en communication, </li>
-            <li>Communique sur des questions complexes avec clarté, précision et en établissant des priorités</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Langues et References</h2>
-        <ul>
-            <li>Français et Swahili (langues maternelles). Lingala. Anglais : moyen</li> 
-            <li>Personnes de référence :</li> 
-            <li> - Polly Mate, Directeur General Capricorne SAP Technologie, +447450812962</li>
-            <li>- Pascal KAYOBO, Gérant d’IHUSI EXPRESS Goma, +243 994813235</li> 
-            <li>- Deo Nzinga, Gérant des bateaux Majestic River Kinshasa, +243 811554518</li>
-        </ul>
-    </section>
-</main>
+      <!-- Sidebar -->
+      <aside>
+        <div class="cv-card">
+          <h3>Informations</h3>
+          <ul class="info-list">
+            <li><span class="lbl">Lieu</span><span>Kinshasa, RDC</span></li>
+            <li><span class="lbl">Email</span><a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></li>
+            <li><span class="lbl">Tél.</span><a href="tel:+243828601922">+243 828 601 922</a></li>
+            <li><span class="lbl">GitHub</span><a href="https://github.com/JPBash" target="_blank" rel="noopener">JPBash</a></li>
+            <li><span class="lbl">LinkedIn</span><a href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener">Profil</a></li>
+          </ul>
+        </div>
 
+        <div class="cv-card">
+          <h3>Compétences Web</h3>
+          <div class="skill-item">
+            <label><span>HTML5 / CSS3</span><span>90%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>JavaScript</span><span>65%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Responsive Design</span><span>85%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Git & GitHub</span><span>75%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h3>Autres outils</h3>
+          <div class="skill-item">
+            <label><span>Suite Adobe</span><span>80%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Microsoft Office</span><span>85%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Google Analytics 4</span><span>65%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Canva / AutoCAD</span><span>70%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+
+        <div class="cv-card">
+          <h3>Langues</h3>
+          <div class="lang-item">
+            <span>Français</span>
+            <div class="lang-dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span>Swahili</span>
+            <div class="lang-dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span>Lingala</span>
+            <div class="lang-dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span>Anglais</span>
+            <div class="lang-dots">
+              <div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div>
+        <h2 class="section-title">Expériences professionnelles</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2024 — Présent</div>
+            <div class="timeline-title">Assistant — Capricorne SAP RDCongo</div>
+            <div class="timeline-place">Goma, RDC</div>
+            <div class="timeline-desc">Support technique et numérique, gestion de données et assistance aux opérations informatiques de l'entreprise.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-title">Officier de quart</div>
+            <div class="timeline-place">Le Majestic River — Kinshasa</div>
+            <div class="timeline-desc">Navigation et gestion opérationnelle à bord (7 mois). Responsable de la sécurité et du bon déroulement des traversées.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2019 — 2021</div>
+            <div class="timeline-title">Second Capitaine & Logistique portuaire</div>
+            <div class="timeline-place">Ets Vanny Bishweka — Goma / Bukavu</div>
+            <div class="timeline-desc">Navigation fluviale, coordination logistique et gestion portuaire sur le lac Kivu (9 mois).</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-title">Officier de quart & Logistique portuaire</div>
+            <div class="timeline-place">Ets Silimu — Bukavu</div>
+            <div class="timeline-desc">Gestion des opérations de navigation et de logistique portuaire (2 mois).</div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Formation</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025 — 2026</div>
+            <div class="timeline-title">Formation Développeur Web</div>
+            <div class="timeline-place">Kadea Academy — Kinshasa, RDC</div>
+            <div class="timeline-desc">HTML5, CSS3, JavaScript, Git/GitHub, Responsive Design et bonnes pratiques du développement web moderne.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 — 2024</div>
+            <div class="timeline-title">Formation en Informatique</div>
+            <div class="timeline-place">Kinshasa, RDC</div>
+            <div class="timeline-desc">Initiation aux outils informatiques, bureautique et systèmes d'information.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018 — 2022</div>
+            <div class="timeline-title">Licence — Navigation Maritime (Capitaine)</div>
+            <div class="timeline-place">Kinshasa, RDC</div>
+            <div class="timeline-desc">Licence technique de navigation maritime avec spécialisation comme capitaine de bateau. Formation en radiocommunication UHF/VHF et logistique maritime.</div>
+          </div>
+        </div>
+
+        <h2 class="section-title">Références</h2>
+        <p style="color:var(--text-muted); font-size:15px; line-height:1.7;">
+          Disponibles sur demande. N'hésitez pas à me <a href="contact.html" style="color:var(--primary); font-weight:600;">contacter</a> pour en savoir plus.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">Bashizi <span>J-P</span></a>
+          <p>Développeur Web passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></li>
+            <li><a href="tel:+243828601922">+243 828 601 922</a></li>
+          </ul>
+          <div class="footer-social">
+            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 BASHIZI Mulunge Jean-Pierre — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

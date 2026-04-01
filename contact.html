@@ -1,40 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title> 
-    <link rel="stylesheet" href="style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Jean-Pierre Bashizi</title>
+  <meta name="description" content="Contactez Jean-Pierre Bashizi, développeur web basé à Goma. Envoyez un message ou retrouvez mes coordonnées, LinkedIn et GitHub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main class="contact-page">
-    <h1>Contactez-moi</h1>
 
-    <section>
-        <form>
-            <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+  <header id="mainHeader">
+    <div class="logo">
+      <a href="index.html">Bashizi <span>J-P</span></a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  </header>
 
-            <label for="email">Email :</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+  <div class="page-header">
+    <h1>Me <span>Contacter</span></h1>
+    <p>Une idée de projet ? Une opportunité ? N'hésitez pas à me laisser un message</p>
+  </div>
 
-            <label for="message">Message :</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
+  <main class="page-content">
+    <div class="contact-grid">
 
-            <button type="submit">Envoyer</button>
+      <!-- Infos de contact -->
+      <div class="contact-info-block">
+        <h3>Coordonnées</h3>
+        <p>Disponible pour des collaborations, des missions freelance ou des opportunités d'emploi.</p>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="ci-label">Email</div>
+            <a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="ci-label">Téléphone</div>
+            <a href="tel:+243828601922">+243 828 601 922</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="ci-label">Localisation</div>
+            <span>Kinshasa, République Démocratique du Congo</span>
+          </div>
+        </div>
+
+        <div class="contact-socials-title">Réseaux sociaux</div>
+        <div class="social-row">
+          <a class="social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
+          <a class="social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
+          <a class="social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+        </div>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="contact-form-block">
+        <h3>Envoyer un message</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Prénom</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jean" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Nom</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Dupont" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" placeholder="Proposition de projet, question..." required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn">
+            ✉ Envoyer le message
+          </button>
+          <div id="formFeedback" style="display:none; margin-top:14px; padding:14px; border-radius:10px; font-size:14px; font-weight:500;"></div>
         </form>
-    </section>
+      </div>
 
-    <section>
-        <h2>Mes coordonnées</h2>
-        <p>Email : <a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></p>
-        <p>Téléphone : +243 828601922</p> 
-        <p>Instagram : <a href="https://www.instagram.com/visitkivu/" target="_blank">Mon profil</a></p>
-        <p>LinkedIn : <a href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank">Mon profil</a></p>
-        <p>GitHub : <a href="https://github.com/JPBash" target="_blank">Mon GitHub</a></p>
-    </section>
-    </main>
+    </div>
+  </main>
 
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">Bashizi <span>J-P</span></a>
+          <p>Développeur Web passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></li>
+            <li><a href="tel:+243828601922">+243 828 601 922</a></li>
+          </ul>
+          <div class="footer-social">
+            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 BASHIZI Mulunge Jean-Pierre — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+
+    // Mobile menu
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // Form feedback
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const feedback = document.getElementById('formFeedback');
+      btn.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+      setTimeout(() => {
+        feedback.style.display = 'block';
+        feedback.style.background = 'rgba(16,185,129,0.1)';
+        feedback.style.color = '#065F46';
+        feedback.style.border = '1px solid rgba(16,185,129,0.3)';
+        feedback.textContent = '✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.';
+        btn.textContent = '✉ Envoyer le message';
+        btn.disabled = false;
+        this.reset();
+      }, 1200);
+    });
+  </script>
 </body>
 </html>

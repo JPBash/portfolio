@@ -1,71 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean-Pierre Bashizi — Développeur Web</title>
+  <meta name="description" content="Portfolio de Jean-Pierre Bashizi, développeur web passionné basé à Goma, RDC. Découvrez mes projets, compétences et formations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
 </head>
-
 <body>
-    <header>
+
+  <header id="mainHeader">
     <div class="logo">
-        <a href="index.html">BASHIZI Mulunge Jean-Pierre</a>
+      <a href="index.html">Bashizi <span>J-P</span></a>
     </div>
-    <nav class="main-nav">
-        <ul>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="profile-container animate-in">
+        <div class="profile-ring"></div>
+        <img src="./images/image_jeanpierre.png" alt="Jean-Pierre Bashizi, développeur web" class="profile-photo">
+      </div>
+      <div class="intro-text">
+        <div class="hero-badge animate-in delay-1">🚀 Disponible pour de nouveaux projets</div>
+        <h1 class="animate-in delay-1">Bonjour, je suis<br><span class="highlight">Jean-Pierre</span></h1>
+        <h2 class="animate-in delay-2">Développeur Web</h2>
+        <p class="animate-in delay-2">
+          Formé à la <strong>Kadea Academy</strong>, je transforme des idées en expériences numériques
+          interactives et soignées avec un sens aigu du détail et de la créativité.
+        </p>
+        <p class="animate-in delay-3">
+          Mon objectif : concevoir des interfaces élégantes et collaborer sur des projets qui ont de l'impact.
+        </p>
+        <div class="skills-chips animate-in delay-3">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Responsive Design</span>
+        </div>
+        <div class="buttons-container animate-in delay-4">
+          <a href="cv.html" class="btn btn-primary">Voir mon CV</a>
+          <a href="projets.html" class="btn btn-outline">Mes projets</a>
+          <a href="contact.html" class="btn btn-accent">Me contacter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-footer">Bashizi <span>J-P</span></a>
+          <p>Développeur Web passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="projets.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section class="hero-section">
-        <div class="profile-container">
-            <img src=./images/image_jeanpierre.png alt="BASHIZI Jean-Pierre" class="profile-photo">
+          </ul>
         </div>
-        <div class="intro-text">
-            <h1>Hello</h1>
-            <h2>A propos de moi</h2>
-            <p>
-                Bonjour, je m'appelle <strong>Jean Pierre Bashizi </strong>, un développeur web passionné doté d'une créativité débordant et d'un talent pour concrétiser des idées en expériences numériques interactives.
-            </p>
-            <p>
-                Mon objectif : améliorer mes compétences et collaborer sur des projets passionnants.
-            </p>
-            <div class="buttons-container">
-                <a href="cv.html" class="btn btn-cv">CV</a>
-                <a href="projets.html" class="btn btn-projets">Projets</a>
-                <a href="contact.html" class="btn btn-contact">Contact</a>
-            </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:j.pierrebash@gmail.com">j.pierrebash@gmail.com</a></li>
+            <li><a href="tel:+243828601922">+243 828 601 922</a></li>
+          </ul>
+          <div class="footer-social">
+            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
+            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+          </div>
         </div>
-    </section>
-</main>
-<footer>
-    <div class="contact-info">
-        <div class="info-item">
-            <span>Téléphone</span>
-            <p>+243 828601922</p>
-        </div>
-        <div class="info-item">
-            <span>Email</span>
-            <p>j.pierrebash@gmail.com</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 BASHIZI Mulunge Jean-Pierre — Tous droits réservés
+      </div>
     </div>
-    <div class="social-links">
-        <span>Suivez-moi</span>
-        <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
-        <a href="#"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-    </div>
-    <div class="copyright">
-        &copy; 2025 BASHIZI Mulunge Jean-Pierre 
-    </div>
-</footer>
+  </footer>
 
-    
+  <script>
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
