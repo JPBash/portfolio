@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV — Jean-Pierre Bashizi</title>
-  <meta name="description" content="Curriculum vitae de Jean-Pierre Bashizi — développeur web. Formations, expériences professionnelles et compétences techniques.">
+  <meta name="description" content="Curriculum vitae de Jean-Pierre Bashizi — développeur full stack. Formations, expériences professionnelles et compétences techniques.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="view-transition" content="same-origin">
+  <script>
+    {
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.classList.add(theme);
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -16,20 +26,30 @@
     <div class="logo">
       <a href="index.html">Bashizi <span>J-P</span></a>
     </div>
-    <nav class="main-nav" id="mainNav">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="cv.html" class="active">CV</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+    <div class="header-actions">
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="cv.html" class="active">CV</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggleBtn" aria-label="Changer de thème">
+        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3z"/></svg>
+        <svg class="sun-icon" viewBox="0 0 24 24"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414 2.122 2.122-1.414 1.414-2.122-2.122zm14.142 14.142l1.414-1.414 2.122 2.122-1.414 1.414-2.122-2.122zM1 11h3v2H1v-2zm19 0h3v2h-3v-2zM4.929 20.485l-1.414-1.414 2.122-2.122 1.414 1.414-2.122 2.122zm14.142-14.142l-1.414-1.414 2.122-2.122 1.414 1.414-2.122 2.122z"/></svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
   </header>
 
   <div class="page-header">
     <h1>Mon <span>CV</span></h1>
     <p>Mon parcours, mes compétences et mes expériences professionnelles</p>
+    <button onclick="window.print()" class="btn btn-outline" style="margin-top: 16px; border-color: rgba(255,255,255,0.3); color: white;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px; margin-top: -2px;"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      Imprimer ou Sauvegarder en PDF
+    </button>
   </div>
 
   <main class="page-content">
@@ -49,18 +69,18 @@
         </div>
 
         <div class="cv-card">
-          <h3>Compétences Web</h3>
+          <h3>Compétences Techniques</h3>
           <div class="skill-item">
-            <label><span>HTML5 / CSS3</span><span>90%</span></label>
-            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            <label><span>Front-end (HTML/CSS/JS)</span><span>85%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
           </div>
           <div class="skill-item">
-            <label><span>JavaScript</span><span>65%</span></label>
+            <label><span>Back-end (AdonisJS)</span><span>65%</span></label>
             <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
           </div>
           <div class="skill-item">
-            <label><span>Responsive Design</span><span>85%</span></label>
-            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+            <label><span>BDD (PostgreSQL/SQL)</span><span>70%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
           </div>
           <div class="skill-item">
             <label><span>Git & GitHub</span><span>75%</span></label>
@@ -69,21 +89,43 @@
         </div>
 
         <div class="cv-card">
+          <h3>Soft Skills</h3>
+          <ul class="info-list" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Travail en équipe</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Proactivité</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Communication</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv-card">
           <h3>Autres outils</h3>
+          <div class="skill-item">
+            <label><span>VS Code & Git</span><span>85%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <label><span>Figma & Canva</span><span>75%</span></label>
+            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
           <div class="skill-item">
             <label><span>Suite Adobe</span><span>80%</span></label>
             <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-          </div>
-          <div class="skill-item">
-            <label><span>Microsoft Office</span><span>85%</span></label>
-            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
           </div>
           <div class="skill-item">
             <label><span>Google Analytics 4</span><span>65%</span></label>
             <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
           </div>
           <div class="skill-item">
-            <label><span>Canva / AutoCAD</span><span>70%</span></label>
+            <label><span>AutoCAD / MS Office</span><span>70%</span></label>
             <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
           </div>
         </div>
@@ -115,64 +157,108 @@
             </div>
           </div>
         </div>
+
+        <div class="cv-card">
+          <h3>Centres d'intérêt</h3>
+          <ul class="info-list" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+              <span>Photographie paysagère</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+              <span>Randonnée</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 8px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C5.8 7 7 5.6 8.5 5.5c1.5-.1 2.7 1.4 4 1.5s2.5-1.5 4-1.5c1.5 0 2.7 1.4 4 1.5 1.3.1 1.9-.4 2.5-1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 1.3 0 2.5-1.4 4-1.5 1.5-.1 2.7 1.4 4 1.5s2.5-1.5 4-1.5c1.5 0 2.7 1.4 4 1.5 1.3.1 1.9-.4 2.5-1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 1.3 0 2.5-1.4 4-1.5 1.5-.1 2.7 1.4 4 1.5s2.5-1.5 4-1.5c1.5 0 2.7 1.4 4 1.5 1.3.1 1.9-.4 2.5-1"></path></svg>
+              <span>Natation</span>
+            </li>
+          </ul>
+        </div>
       </aside>
 
       <!-- Main content -->
       <div>
         <h2 class="section-title">Expériences professionnelles</h2>
         <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2024 — Présent</div>
-            <div class="timeline-title">Assistant — Capricorne SAP RDCongo</div>
-            <div class="timeline-place">Goma, RDC</div>
-            <div class="timeline-desc">Support technique et numérique, gestion de données et assistance aux opérations informatiques de l'entreprise.</div>
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-date">De 2022 à 2024</div>
+            <div class="timeline-title">Superviseur logistique</div>
+            <div class="timeline-place">Capricorne SAP Technologies — Kinshasa</div>
+            <div class="timeline-desc">
+              <ul style="margin-top: 8px; padding-left: 20px; color: var(--text-muted); font-size: 15px; line-height: 1.6;">
+                <li>Gestion complète de l'équipe et des ressources (planning, formation).</li>
+                <li>Coordination logistique stratégique pour optimiser l'efficacité opérationnelle.</li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal-on-scroll">
             <div class="timeline-date">2022</div>
             <div class="timeline-title">Officier de quart</div>
             <div class="timeline-place">Le Majestic River — Kinshasa</div>
-            <div class="timeline-desc">Navigation et gestion opérationnelle à bord (7 mois). Responsable de la sécurité et du bon déroulement des traversées.</div>
+            <div class="timeline-desc">
+              <ul style="margin-top: 8px; padding-left: 20px; color: var(--text-muted); font-size: 15px; line-height: 1.6;">
+                <li>Pilotage et assistance au capitaine lors des manœuvres sur le fleuve Congo.</li>
+                <li>Gestion de la sécurité des personnes, des biens et de la prévention contre les actes de fraude ou criminels à bord.</li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2019 — 2021</div>
-            <div class="timeline-title">Second Capitaine & Logistique portuaire</div>
-            <div class="timeline-place">Ets Vanny Bishweka — Goma / Bukavu</div>
-            <div class="timeline-desc">Navigation fluviale, coordination logistique et gestion portuaire sur le lac Kivu (9 mois).</div>
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-date">De 2019 à 2021</div>
+            <div class="timeline-title">Second capitaine, logistique portuaire</div>
+            <div class="timeline-place">Ets Vanny Bishweka — Goma, Bukavu</div>
+            <div class="timeline-desc">
+              <ul style="margin-top: 8px; padding-left: 20px; color: var(--text-muted); font-size: 15px; line-height: 1.6;">
+                <li>Seconder le capitaine des Vedettes IHUSI (Lac Kivu) pour le pilotage et les manœuvres.</li>
+                <li>Gestion de la sécurité, de la supervision mécanique et de l'exploitation commerciale (passagers/cargaison).</li>
+              </ul>
+            </div>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal-on-scroll">
             <div class="timeline-date">2021</div>
-            <div class="timeline-title">Officier de quart & Logistique portuaire</div>
+            <div class="timeline-title">Officier de quart, logistique portuaire</div>
             <div class="timeline-place">Ets Silimu — Bukavu</div>
-            <div class="timeline-desc">Gestion des opérations de navigation et de logistique portuaire (2 mois).</div>
+            <div class="timeline-desc">
+              <ul style="margin-top: 8px; padding-left: 20px; color: var(--text-muted); font-size: 15px; line-height: 1.6;">
+                <li>Pilotage et supervision de toutes les opérations navales sur le lac Kivu (Bateau "Emmanuel 2") incluant la navigation, la sécurité des personnes et marchandises.</li>
+                <li>Gestion commerciale et le suivi technique (mécanique).</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <h2 class="section-title">Formation</h2>
+        <h2 class="section-title">Diplômes et Formations</h2>
         <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2025 — 2026</div>
-            <div class="timeline-title">Formation Développeur Web</div>
-            <div class="timeline-place">Kadea Academy — Kinshasa, RDC</div>
-            <div class="timeline-desc">HTML5, CSS3, JavaScript, Git/GitHub, Responsive Design et bonnes pratiques du développement web moderne.</div>
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-date">De juin 2025 à mars 2026</div>
+            <div class="timeline-title">Formation Développement web et mobile (Certificat Simplon Bac+2)</div>
+            <div class="timeline-place">Kadea Academy — Kinshasa</div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2022 — 2024</div>
-            <div class="timeline-title">Formation en Informatique</div>
-            <div class="timeline-place">Kinshasa, RDC</div>
-            <div class="timeline-desc">Initiation aux outils informatiques, bureautique et systèmes d'information.</div>
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-date">De 2018 à 2022</div>
+            <div class="timeline-title">Licence Technique en Navigation maritime</div>
+            <div class="timeline-place">École de navigation — Kinshasa / RD Congo</div>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2018 — 2022</div>
-            <div class="timeline-title">Licence — Navigation Maritime (Capitaine)</div>
-            <div class="timeline-place">Kinshasa, RDC</div>
-            <div class="timeline-desc">Licence technique de navigation maritime avec spécialisation comme capitaine de bateau. Formation en radiocommunication UHF/VHF et logistique maritime.</div>
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-date">De sept. 2015 à juil. 2016</div>
+            <div class="timeline-title">Diplôme d'Etat en Pédagogie Générale</div>
+            <div class="timeline-place">Institut NAMANGO — Bukavu</div>
           </div>
         </div>
 
         <h2 class="section-title">Références</h2>
-        <p style="color:var(--text-muted); font-size:15px; line-height:1.7;">
-          Disponibles sur demande. N'hésitez pas à me <a href="contact.html" style="color:var(--primary); font-weight:600;">contacter</a> pour en savoir plus.
-        </p>
+        <div class="cv-card" style="margin-bottom: 24px;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <strong style="color: var(--text);">Pascal KAYUBU</strong>
+              <p style="color: var(--text-muted); font-size: 14px; margin: 4px 0;">Gérant IHUSI GOMA, Ihusi Express</p>
+            </div>
+            <div>
+              <strong style="color: var(--text);">Sacré MBIKU</strong>
+              <p style="color: var(--text-muted); font-size: 14px; margin: 4px 0;">Coach, Kadea Academy <br> <a href="mailto:sacre@kadea.co" style="color: var(--primary);">sacre@kadea.co</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -182,7 +268,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo-footer">Bashizi <span>J-P</span></a>
-          <p>Développeur Web passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
+          <p>Développeur Full Stack passionné, basé à Kinshasa, RDC. Ouvert aux opportunités et collaborations.</p>
         </div>
         <div class="footer-links">
           <h4>Navigation</h4>
@@ -200,9 +286,15 @@
             <li><a href="tel:+243828601922">+243 828 601 922</a></li>
           </ul>
           <div class="footer-social">
-            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">GH</a>
-            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">in</a>
-            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">IG</a>
+            <a class="footer-social-btn" href="https://github.com/JPBash" target="_blank" rel="noopener" title="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+            <a class="footer-social-btn" href="https://cd.linkedin.com/in/jean-pierre-bashizi-259388364" target="_blank" rel="noopener" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a class="footer-social-btn" href="https://www.instagram.com/visitkivu/" target="_blank" rel="noopener" title="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -215,6 +307,61 @@
     window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
     document.getElementById('menuToggle').addEventListener('click', () => {
       document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // Gestion du theme
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark') || 
+                     (!document.documentElement.classList.contains('light') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      
+      if (isDark) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Fallback pour les animations de défilement (IntersectionObserver)
+    if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15 });
+      
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    // Animation des barres de compétences (progressive enhancement)
+    const skillFills = document.querySelectorAll('.skill-fill');
+    skillFills.forEach(fill => {
+      const targetWidth = fill.style.width;
+      fill.setAttribute('data-target-width', targetWidth);
+      fill.style.width = '0';
+    });
+
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const fill = entry.target;
+          const targetWidth = fill.getAttribute('data-target-width');
+          fill.style.width = targetWidth;
+          skillObserver.unobserve(fill);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    skillFills.forEach(fill => {
+      skillObserver.observe(fill);
     });
   </script>
 </body>
