@@ -269,6 +269,35 @@ html.dark .theme-toggle .moon-icon { display: none; }
 }
 .buttons-container { display: flex; gap: 12px; flex-wrap: wrap; }
 
+.marketing-section {
+  max-width: var(--max-width);
+  margin: 0 auto 80px;
+  padding: 0 5%;
+}
+.section-heading {
+  margin-bottom: 24px;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.section-heading h3 {
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  color: var(--text);
+}
+.marketing-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.marketing-card .project-links {
+  margin-top: auto;
+}
+
 /* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
